@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# CodeBlocks project
+*.cbp
+*.depend
+*.layout
+
+# Game files
+*.txt
+*.png
+*.ttf
