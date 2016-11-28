@@ -38,7 +38,7 @@ int main()
         {
             Map temp(name.c_str(), &maps, &objects);
             mapa = temp;
-            cout << "Map loaded from " << name << endl;
+            cout << "Map loaded from file " << name << endl;
         }
         else
         {
