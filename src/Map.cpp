@@ -45,7 +45,7 @@ Map::Map(const char * mapfile, MapSprites * sprites, MapSprites * objects)
                 {
                     if (x < 0) m_intmap[k][i][j] = -1;
                     else m_intmap[k][i][j] = x;
-                    m_image.copy((*m_objects)[x], j*cord_to_pix, i*cord_to_pix, sf::IntRect(0, 0, 32, 32), k);
+                    if (x >= 0) m_image.copy((*m_objects)[x], j*cord_to_pix, i*cord_to_pix, sf::IntRect(0, 0, 32, 32), k);
                 }
                 std::cout << m_intmap[k][i][j] << " ";
 
